@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Careers | Analytx4t</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="career.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="logoanalytx.png" alt="Analytx4t Logo">
+  </div>
+
+  <ul class="nav-links">
+    <li>Home</li>
+    <li>About Us</li>
+    <li>Services</li>
+    <li>Product</li>
+    <li>Features</li>
+    <li>Blog</li>
+    <li>Contact</li>
+    <li class="career-btn">Careers</li>
+  </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Join Our Team at Analytx4t</h1>
+    <p>
+      We're always on the lookout for talented and passionate individuals to
+      join our growing team. If you're interested in AI, automation, and
+      cutting-edge solutions, we'd love to hear from you.
+    </p>
+    <button>Explore Open Positions</button>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- JOBS -->
+<h2 class="section-title">Current Job Openings</h2>
+
+<section class="jobs">
+  <div class="job-card">
+    <h3>AI  Engineer</h3>
+    <p>Location: Noida, India</p>
+    <p>Type: Full-Time</p>
+    <button onclick="openModal('AI & Machine Learning Engineer')">Apply Now</button>
+
+  </div>
+
+  <div class="job-card">
+    <h3>Full Stack Developer</h3>
+    <p>Location: Noida, India</p>
+    <p>Type: Full-Time</p>
+    <button  onclick="openModal('Full Stack Developer')">Apply Now</button>
+
+  </div>
+
+  <div class="job-card">
+    <h3>Automation Test Engineer</h3>
+    <p>Location: Noida, India</p>
+    <p>Type: Full-Time</p>
+    <button  onclick="openModal('Automation Test Engineer')">Apply Now</button>
+
+  </div>
+
+  <div class="job-card">
+    <h3>Data Scientist</h3>
+    <p>Location: Noida, India</p>
+    <p>Type: Full-Time</p>
+    <button  onclick="openModal('Data Scientist')">Apply Now</button>
+
+  </div>
+
+  
+  <div class="job-card">
+    <h3>Python Developer</h3>
+    
+    <p>Location: Noida, India</p>
+    <p>Type: Full-Time</p>
+    <button onclick="openModal('Python Developer')">Apply Now</button>
+  </div>
+
+  
+  <div class="job-card">
+    <h3>Data Analyst</h3>
+    
+    <p>Location: Noida, India</p>
+    <p>Type: Full-Time</p>
+    <button  onclick="openModal('Data Analyst')">Apply Now</button>
+
+  </div>
+
+  <div class="job-card">
+    <h3>Dashboard developer</h3>
+    <p>Location: Noida, India</p>
+    <p>Type: Full-Time</p>
+    <button onclick="openModal('AI & Machine Learning Engineer')">Apply Now</button>
+
+  </div>
+
+  <div class="job-card">
+    <h3>Java Developer</h3>
+    <p>Location: Noida, India</p>
+    <p>Type: Full-Time</p>
+    <button onclick="openModal('AI & Machine Learning Engineer')">Apply Now</button>
+
+  </div>
+
+</section>
+
+<!-- WHY JOIN -->
+<section class="why">
+  <h2 class="section-title">Why Join Analytx4t?</h2>
+
+  <div class="why-grid">
+    <div class="why-card">
+      <h4>Innovative Environment</h4>
+      <p>Work on cutting-edge AI and automation projects.</p>
+    </div>
+
+    <div class="why-card">
+      <h4>Career Growth</h4>
+      <p>Opportunities for professional development.</p>
+    </div>
+
+    <div class="why-card">
+      <h4>Collaborative Team</h4>
+      <p>Supportive and dynamic team culture.</p>
+    </div>
+
+    <div class="why-card">
+      <h4>Competitive Benefits</h4>
+      <p>Attractive salary and flexible working.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FULL SCREEN JOB DETAIL -->
+<div class="job-screen" id="jobScreen">
+
+  <div class="job-header">
+    <h1 id="jobTitle"></h1>
+    <span class="close-btn" onclick="closeJob()">✕</span>
+  </div>
+
+  <div class="job-body">
+    <p id="jobIntro"></p>
+
+    <h3>Key Responsibilities</h3>
+    <ul id="jobResponsibilities"></ul>
+
+    <h3>Required Skills</h3>
+    <ul id="jobSkills"></ul>
+
+    <h3>Apply for this position</h3>
+
+    <form id="jobForm">
+  <input type="file" id="resume" name="resume" required>
+  <button type="submit">Submit Application</button>
+</form>
+
+
+
+    <!-- SUCCESS MESSAGE -->
+<div class="success-box" id="successBox">
+  <div class="checkmark">
+    ✓
+  </div>
+  <h2>Application Submitted!</h2>
+  <p>
+    Thank you for applying. Our team has received your application
+    and will get back to you shortly.
+  </p>
+</div>
+
+
+    <p class="thank-you" id="jobThankYou">
+      ✅ Thank you for applying! Our HR team will get in touch with you soon.
+    </p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

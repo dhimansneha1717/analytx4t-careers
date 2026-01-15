@@ -1,0 +1,333 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body{
+  background:#06162f;
+  color:white;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 70px;
+}
+
+.logo img{
+  height:40px;
+}
+
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:28px;
+  align-items:center;
+}
+
+.nav-links li{
+  cursor:pointer;
+  opacity:0.85;
+}
+
+.career-btn{
+  background:#49b9c6;
+  padding:8px 18px;
+  border-radius:6px;
+  opacity:1;
+}
+
+/* HERO (HOME PAGE STYLE) */
+.hero{
+  position: relative;
+  min-height: 90vh;
+  padding-left: 80px;
+  display: flex;
+  align-items: center;
+
+  background: linear-gradient(
+    90deg,
+    #06162f 0%,
+    #06162f 40%,
+    #0e3c4d 100%
+  );
+
+  overflow: hidden;
+}
+
+/* BIG RIGHT IMAGE (BACKGROUND STYLE) */
+.hero::after{
+  content: "";
+  position: absolute;
+  right: -60px;
+  top: 65%;
+  transform: translateY(-50%) scaleX(-1);
+
+  width: 720px;
+  height: 720px;
+
+  background: url("logorightanalytx.png") no-repeat center;
+  background-size: contain;
+
+  animation: float 6s ease-in-out infinite;
+
+
+  opacity: 0.95;
+  filter:
+    drop-shadow(0 0 40px rgba(80,220,230,.55))
+    drop-shadow(0 0 80px rgba(40,180,200,.25));
+}
+
+/* HERO TEXT */
+.hero-content{
+  position: relative;
+  z-index: 2;
+  max-width: 560px;
+}
+
+.hero-content h1{
+  font-size: 3.6rem;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero-content p{
+  color: #cfeef4;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-content button{
+  background: #49b9c6;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* SECTION TITLE */
+.section-title{
+  text-align:center;
+  font-size:2rem;
+  margin:80px 0 40px;
+}
+
+
+
+
+
+/* JOBS */
+/* .jobs{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+  padding:0 70px 80px;
+} */
+
+.jobs{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 0 70px 80px;
+  align-items: stretch;
+}
+
+
+.job-card{
+  background:#0b2447;
+  border-radius:12px;
+  padding:25px;
+  box-shadow:0 0 25px rgba(60,200,220,.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.job-card p{
+  color:#bfe8ef;
+  font-size:.9rem;
+}
+
+.job-card button{
+  margin-top:15px;
+  width:100%;
+  padding:10px;
+  border:none;
+  background:#49b9c6;
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+/* WHY JOIN */
+.why{
+  padding:80px 70px;
+  background:#020b1e;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+  margin-top:40px;
+}
+
+.why-card{
+  background:#0b2447;
+  padding:30px;
+  border-radius:14px;
+  text-align:center;
+}
+
+.why-card p{
+  color:#c8eaf0;
+  font-size:.9rem;
+}
+
+/* FOOTER WAVE */
+.footer-wave{
+  height:80px;
+  background:linear-gradient(180deg,transparent,#020b1e);
+}
+
+
+@keyframes float {
+  0%   { transform: translateY(-50%) scaleX(-1) translateY(0); }
+  50%  { transform: translateY(-50%) scaleX(-1) translateY(-20px); }
+  100% { transform: translateY(-50%) scaleX(-1) translateY(0); }
+}
+
+/* FULL SCREEN JOB VIEW */
+.job-screen{
+  position: fixed;
+  inset: 0;
+  background: #06162f;
+  display: none;
+  flex-direction: column;
+  z-index: 9999;
+  overflow-y: auto;
+}
+
+/* HEADER */
+.job-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  background: #020b1e;
+}
+
+.job-header h1{
+  font-size: 2.4rem;
+}
+
+.close-btn{
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* BODY */
+.job-body{
+  padding: 40px 60px 80px;
+  max-width: 900px;
+}
+
+.job-body p{
+  color: #cfeef4;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.job-body h3{
+  margin: 30px 0 10px;
+}
+
+.job-body ul{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.job-body li{
+  margin: 8px 0;
+  color: #bfe8ef;
+}
+
+/* FORM */
+.job-body input{
+  margin: 15px 0 20px;
+}
+
+.job-body button{
+  padding: 12px 26px;
+  background: #49b9c6;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* THANK YOU */
+.thank-you{
+  display: none;
+  margin-top: 30px;
+  color: #7fffd4;
+  font-size: 1.1rem;
+}
+
+/* SUCCESS MESSAGE */
+.success-box{
+  display: none;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.checkmark{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 4px solid #4CAF50;
+  color: #4CAF50;
+  font-size: 48px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 25px;
+
+  animation: pop 0.6s ease-out;
+}
+
+.success-box h2{
+  color: #7CFF9E;
+  margin-bottom: 10px;
+}
+
+.success-box p{
+  color: #cfeef4;
+  font-size: 1rem;
+  max-width: 420px;
+  margin: auto;
+}
+
+/* ANIMATION */
+@keyframes pop{
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  70%{
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1);
+  }
+}
